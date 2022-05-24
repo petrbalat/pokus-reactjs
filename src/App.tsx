@@ -4,7 +4,7 @@ import Person from './Person';
 
 export default function App(params: {
   name: string;
-  age?: number;
+  street?: number;
 }) {
   const [count, setCount] = useState(0)
 
@@ -15,7 +15,7 @@ export default function App(params: {
   return (
     <div className="App">
       <header className="App-header">
-        <Person name={params.name} age={params.age}></Person>
+        <Person name={params.name} street={params.street}></Person>
 
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
